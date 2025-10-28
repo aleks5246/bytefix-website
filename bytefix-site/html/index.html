@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteFix – IT-service & Support</title>
+  <style>
+    :root {
+      --blue-dark: #0d47a1;
+      --blue-light: #2196f3;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, var(--blue-dark), #1976d2);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: radial-gradient(circle at center, #2196f3 0%, #0d47a1 80%);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.7rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(255,255,255,0.08);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 0.3rem;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 0.8rem;
+      padding: 1.2rem;
+      text-align: center;
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: rgba(255,255,255,0.15);
+    }
+
+    .icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a.button {
+      display: inline-block;
+      background: var(--blue-light);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 999px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    a.button:hover { background: #64b5f6; }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(255,255,255,0.05);
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .social a {
+      color: #fff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-top: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.6rem;
+      border: none;
+      border-radius: 0.4rem;
+      font-size: 1rem;
+      resize: none;
+    }
+
+    input[type="submit"] {
+      background: var(--blue-light);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover { background: #64b5f6; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.4rem; }
+      section { margin: 1rem; padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ByteFix</h1>
+    <p>Din lokala partner för IT-service, support och reparation</p>
+  </header>
+
+  <section id="tjanster">
+    <h2>Våra tjänster</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Datorreparation</h3>
+        <p>Snabb felsökning och reparation av datorer, laptops och tillbehör.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📶</div>
+        <h3>Nätverk & Wi-Fi</h3>
+        <p>Stabilt nätverk hemma och på kontoret – installation & optimering.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Program-installation</h3>
+        <p>Vi installerar och konfigurerar mjukvara och operativsystem.</p>
+      </div>
+      <div class="card">
+        <div class="icon">☁️</div>
+        <h3>Backup & återställning</h3>
+        <p>Säker lagring av dina filer och återställning vid dataförlust.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="varfor">
+    <h2>Varför välja ByteFix?</h2>
+    <ul>
+      <li>✅ Personlig service och snabb återkoppling</li>
+      <li>✅ Rimliga priser och inga dolda avgifter</li>
+      <li>✅ Erfarenhet av både PC, Mac och nätverk</li>
+      <li>✅ Flexibla lösningar – vi kommer till dig vid behov</li>
+    </ul>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakta oss</h2>
+    <p>
+      📍 Storgatan 12, 123 45 Byteby<br>
+      ☎️ 070-123 45 67<br>
+      ✉️ <a href="mailto:kontakt@bytefix.se" style="color:#fff;text-decoration:underline;">kontakt@bytefix.se</a>
+    </p>
+
+    <form>
+      <input type="text" name="namn" placeholder="Ditt namn" required>
+      <input type="email" name="email" placeholder="Din e-post" required>
+      <textarea name="meddelande" rows="4" placeholder="Skriv ditt meddelande här..."></textarea>
+      <input type="submit" value="Skicka">
+    </form>
+  </section>
+
+  <footer>
+    <div class="social">
+      <a href="#">Facebook</a> • 
+      <a href="#">Instagram</a> • 
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>&copy; 2025 ByteFix AB – All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
